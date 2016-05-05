@@ -1,0 +1,22 @@
+---
+# tasks file for iso
+
+# first we need to ensure for directory ../iso !!
+
+- name: ensure we have ubuntu-12.04.5-desktop-amd64.iso locally.
+  get_url:
+    url=http://releases.ubuntu.com/12.04/SHA256SUMS
+    dest=../iso/SHA256SUMS
+
+#- name: ensure we have ubuntu-12.04.5-desktop-amd64.iso locally.
+#  get_url:
+#    url=http://releases.ubuntu.com/12.04/ubuntu-12.04.5-server-amd64.iso
+#    dest=./files/ubuntu-12.04.5-server-amd64.iso
+#    sha256sum=af224223de99e2a730b67d7785b657f549be0d63221188e105445f75fb8305c9
+
+#- name: ensure we have ubuntu-12.04.5-desktop-amd64.iso locally.
+#  get_url:
+#    url=http://releases.ubuntu.com/12.04/ubuntu-12.04.5-desktop-amd64.iso
+#    dest=files/ubuntu-12.04.5-desktop-amd64.iso
+#    sha256sum=d1f10ea7ca59266567fa8d2522ad800e1aa063f139630f925d2484d8e169b4c2
+
